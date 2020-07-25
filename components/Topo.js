@@ -8,7 +8,7 @@ const Topo = () => {
                 <Image source={require('../assets/menu.png')} style={style.menu} />
             </View>
             <View style={style.boxTitle}>
-                <Text style={style.texto}>Products</Text>
+                <Text style={style.texto}>AÇOUGUE</Text>
             </View>
             <View style={style.boxIcone}>
                 <Image source={require('../assets/back.png')} style={style.menu} />

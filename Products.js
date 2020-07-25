@@ -11,9 +11,6 @@ import {
     TouchableHighlight 
   } from 'react-native';
 
-import Topo from './components/Topo';
-import Bottom from './components/Bottom';
-
 const DATA = [
     {
       id: 'bd7acbea-c1b1-46c2-aed5-3ad53abb28ba',
@@ -75,13 +72,14 @@ class Products extends Component {
     render() {
         return (
             <SafeAreaView>
-                <Topo />
+                
                 <View style={style.container}>
             
                     <ScrollView>
                         <TextInput 
                             style={style.search}
                             placeholder="Digite para filtrar"
+                            inlineImageLeft='username'
                         />
                         <FlatList
                             data={DATA}
@@ -90,7 +88,7 @@ class Products extends Component {
                         />
                     </ScrollView>
                 </View>
-                <Bottom />
+                
             </SafeAreaView>
         );
     }
